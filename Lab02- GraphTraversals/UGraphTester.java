@@ -7,7 +7,7 @@ public class UGraphTester{
 
 				String vertex1 = "";
 				String vertex2 = "";
-				while(choice < 10){
+				while(choice <= 10){
 
 						printMenu();
 
@@ -68,7 +68,11 @@ public class UGraphTester{
 										vertex1 = scanner.next();
 										graph.removeVertex(vertex1);
 										break;
-						}
+								case 10:
+										System.out.println("Traversal: ");
+										graph.traverse();
+										break;
+						}		
 				}
 		}
 
@@ -83,6 +87,7 @@ public class UGraphTester{
 				System.out.println("7. Delete an Edge");
 				System.out.println("8. Add a Vertex");
 				System.out.println("9. Delete Vertex");
-				System.out.println("10. Exit");
+				System.out.println("10. Traverse");
+				System.out.println("11. Exit");
 		}
 } 
