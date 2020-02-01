@@ -47,26 +47,13 @@ public class ALGraph{
 				}
 
 				VertexStack vStack = new VertexStack();
-				vStack.push(vertexList.head.getName());
+				vStack.push(vertexList.head);
 				while(!vStack.isEmpty()){
-						boolean pushed = false;
 						String top = vStack.pop();
-						String[] adj = listAdjacentVertices(top).split(" ");
-						System.out.println("    OTIN!");
-						//check if any adjacent node is still unvisited;
-						for(int x = 0; x < adj.length; x++){
-								System.out.println("OTIN!");
-								if(vertexList.checkVisited(adj[x]) == false){
-										vertexList.visit(adj[x]);
-										vStack.push(adj[x]);
-										pushed = true;
-										break;
-								}
+						String[] adj = listAdjacent(top).split(" ");
+						for(int x = 0; x < adj; x++){
+								if(ad)
 						}
-						if(pushed == true){
-								continue;
-						}
-						System.out.print(" "+top+" ");
 				}
 		}
 
@@ -207,24 +194,10 @@ public class ALGraph{
 						return false;
 				}
 				private void visit(String vertexName){
-						Vertex curr = head;
-						while(curr != null){
-								if(vertexName.equals(curr.getName())){
-										curr.visit();
-										return;
-								}
-								curr = curr.next;
-						}
+
 				}
 				private void unvisit(String vertexName){
-						Vertex curr = head;
-						while(curr != null){
-								if(vertexName.equals(curr.getName())){
-										curr.unvisit();
-										return;
-								}
-								curr = curr.next;
-						}
+					
 				}
 
 				private String listAdjacent(String vertexName){
