@@ -43,7 +43,7 @@ public class ALGraph{
 				vStack.push(vertexList.head.getName());
 				vertexList.visit(vertexList.head.getName());
 				while(!vStack.isEmpty()){
-
+						
 						String curr = vStack.pop();
 						System.out.print(" "+curr+" ");
 						String[] adj = listAdjacentVertices(curr).split(" ");
@@ -78,7 +78,7 @@ public class ALGraph{
 				}
 				vertexList.unvisit();
 		}
-		public int[] sswupl(String vertexName){
+		public int[] ssupl(String vertexName){
 				int[] output = vertexList.sswupl(vertexName);
 				vertexList.unvisit();
 				return output;
@@ -220,7 +220,7 @@ public class ALGraph{
 										curr.visit();
 										return;
 								}
-
+								
 								curr = curr.next;
 						}
 				}
@@ -254,7 +254,7 @@ public class ALGraph{
 								head = new Vertex(vertexName);
 								return;
 						}
-
+						
 						while(curr.next != null){
 								curr = curr.next;
 						}
@@ -323,7 +323,7 @@ public class ALGraph{
 								}
 								else if(vertexB.equals(curr.getName())){
 										curr.connect(vertexA);	
-
+										
 								}
 								curr = curr.next;
 						}
@@ -518,7 +518,7 @@ public class ALGraph{
 								private class Node{
 										private String data;
 										Node next;
-
+										
 										private Node(String name){
 												data = name;
 												next = null;

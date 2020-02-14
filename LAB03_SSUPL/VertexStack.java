@@ -43,5 +43,5 @@ public class VertexStack{
 						return data;
 				}
 		}
-
-} 
+		
+}

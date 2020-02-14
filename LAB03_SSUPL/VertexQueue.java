@@ -36,4 +36,4 @@ public class VertexQueue{
 						return data;
 				}
 		}
-}	 
+}

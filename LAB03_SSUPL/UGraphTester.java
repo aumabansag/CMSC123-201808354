@@ -79,7 +79,7 @@ public class UGraphTester{
 										vertex1 = scanner.next();
 										graph.traverseBFS();
 										System.out.println("");
-										int[] lengths = graph.sswupl(vertex1);
+										int[] lengths = graph.ssupl(vertex1);
 										for(int x =0; x< lengths.length; x++){
 												System.out.print(lengths[x]+" ");
 										}
@@ -103,4 +103,4 @@ public class UGraphTester{
 				System.out.println("11. SSWUPL");
 				System.out.println("12. Exit");
 		}
-}
+} 
