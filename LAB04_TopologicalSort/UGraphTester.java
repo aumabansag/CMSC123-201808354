@@ -113,7 +113,8 @@ public class UGraphTester{
 				System.out.println("8. Add a Vertex");
 				System.out.println("9. Delete Vertex");
 				System.out.println("10. Traverse");
-				System.out.println("11. SSWUPL");
-				System.out.println("12. Exit");
+				System.out.println("11. SSUPL");
+				System.out.println("12. Topological Sort");
+				System.out.println("13. Exit");
 		}
 } 
